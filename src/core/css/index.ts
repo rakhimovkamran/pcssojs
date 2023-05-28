@@ -1,4 +1,4 @@
-import { PCSSOConfiguration, StyleObject } from '~/types/core';
+import { PCSSOConfiguration, StyleObject } from '../../types/core';
 
 /**
  * Function for creating pcsso style object

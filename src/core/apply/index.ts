@@ -1,5 +1,5 @@
-import { StyleObject } from '~/types/core';
-import { SheetWorker } from '~/workers/SheetWorker';
+import { StyleObject } from '../../types/core';
+import { SheetWorker } from '../../workers/SheetWorker';
 
 /**
  * Function for appending pcsso style to the stylesheet

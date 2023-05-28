@@ -1,5 +1,5 @@
-import { PCSSOConfiguration, StyleObject, Transformers } from '~/types/core';
-import { CLASS_PREFIX } from '~/constants/Sheet';
+import { PCSSOConfiguration, StyleObject, Transformers } from '../types/core';
+import { CLASS_PREFIX } from '../constants/Sheet';
 
 export class Helpers {
   /**

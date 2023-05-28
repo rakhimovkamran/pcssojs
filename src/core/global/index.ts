@@ -1,5 +1,5 @@
-import { PCSSOConfiguration, GlobalStyleObject } from '~/types/core';
-import { SheetWorker } from '~/workers/SheetWorker';
+import { PCSSOConfiguration, GlobalStyleObject } from '../../types/core';
+import { SheetWorker } from '../../workers/SheetWorker';
 
 /**
  * Function for appending global styles

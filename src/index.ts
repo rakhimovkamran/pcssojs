@@ -1,11 +1,11 @@
-import type { PCSSOConfiguration } from '~/types/core';
-import { SheetWorker } from '~/workers/SheetWorker';
+import type { PCSSOConfiguration } from './types/core';
+import { SheetWorker } from './workers/SheetWorker';
 
 import {
   global as GlobalModule,
   css as CSSModule,
   apply as ApplyModule,
-} from '~/core';
+} from './core';
 
 export const createPCSSO = <T>(configuration: PCSSOConfiguration<T>) => {
   const sheetWorker = new SheetWorker(configuration);

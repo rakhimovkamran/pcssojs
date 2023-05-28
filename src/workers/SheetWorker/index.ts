@@ -3,11 +3,11 @@ import type {
   PCSSOConfiguration,
   Selectors,
   StyleObject,
-} from '~/types/core';
+} from '../../types/core';
 
-import type { BaseStyleType, Sheet } from '~/types/sheet';
-import { BASE_STYLE_TYPES, STYLE_ID } from '~/constants/Sheet';
-import { Helpers } from '~/helpers';
+import type { BaseStyleType, Sheet } from '../../types/sheet';
+import { BASE_STYLE_TYPES, STYLE_ID } from '../../constants/Sheet';
+import { Helpers } from '../../helpers';
 
 export class SheetWorker<T> {
   rootSheet: Sheet;
