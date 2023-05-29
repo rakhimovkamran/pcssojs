@@ -1,6 +1,6 @@
 {
   "name": "pcssojs",
-  "version": "0.0.2-development",
+  "version": "0.0.3-development",
   "description": "A lightweight CSS in JS library that offers maximum flexibility. It allows full configuration to suit your needs and enables seamless integration with your project.",
   "main": "./lib/index.js",
   "files": [
