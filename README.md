@@ -8,6 +8,10 @@ import { createPCSSO } from "pcssojs";
 
 export const { css, apply, global } = createPCSSO({
   data: {
+    colors: {
+      gray: 'gray'
+    },
+    
     spacings: {
       xl: "2rem"
     }
@@ -24,14 +28,27 @@ export const { css, apply, global } = createPCSSO({
 
 Then use it in your application
 ```typescript jsx
-import { css, apply } from "pcsso.config.ts"
+import { css, apply, global } from "pcsso.config.ts"
 
+// Adding global styles using "global"
+global((data) => ({
+  "*": {
+    boxSizing: "border-box"  
+  },
+  
+  body: {
+    background: data.colors.gray
+  }
+}))
+
+// Create style using "css" function
 const boxStyle = css((data) => ({
   mx: data.spacings.xl
 }))
 
 const Box = () => {
   return (
+    // Apply created style using "apply" function
     <div className={apply(boxStyle)} />
   )
 }
