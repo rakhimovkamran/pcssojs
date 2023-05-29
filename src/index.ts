@@ -1,18 +1,17 @@
 import type { PCSSOConfiguration } from './types/core';
 import { SheetWorker } from './workers/SheetWorker';
 
-import {
-  global as GlobalModule,
-  css as CSSModule,
-  apply as ApplyModule,
-} from './core';
+import Core from './core';
+import React from './react';
 
 export const createPCSSO = <T>(configuration: PCSSOConfiguration<T>) => {
   const sheetWorker = new SheetWorker(configuration);
 
   return {
-    global: GlobalModule(configuration, sheetWorker),
-    css: CSSModule(configuration),
-    apply: ApplyModule(sheetWorker),
+    global: Core.global(configuration, sheetWorker),
+    css: Core.css(configuration),
+    apply: Core.apply(sheetWorker),
+
+    styled: React.styled(configuration, sheetWorker),
   } as const;
 };
